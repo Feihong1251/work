@@ -1,0 +1,191 @@
+.accounting-h6-style {
+    background-color: #87CEEB; 
+    padding: 20px; 
+    text-align: center;
+    color: black; 
+    font-weight: bold;
+    width: 240px;
+    height: 70px; 
+    line-height: 30px;
+    box-sizing: border-box; 
+    margin-left: -12px; 
+    font-size: large;
+}
+.name-style {
+    background-color: #87CEEB; 
+    padding: 20px; 
+    text-align: center;
+    color: black; 
+    font-weight: bold;
+    width: 240px;
+    height: 54px; 
+    line-height: 30px;
+    box-sizing: border-box; 
+    margin-left: -12px; 
+}
+.user-profile {
+    display: flex;
+    align-items: center;
+   
+}
+
+.user-profile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 0px;
+}
+.user-text-info-block {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    width: 240px;
+    height: 54px;
+    box-sizing: border-box;
+}
+
+.user-text-info {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 240px;
+    height: 54 px;
+    padding: 10px;
+   
+}
+
+.user-text-info p {
+    margin: -35px 0 0 0;
+    line-height: 1.2;
+}
+
+.user-text-info p[tabindex="0"] {
+    font-weight: bold;
+    color: #333;
+}
+
+.user-text-info .text-muted {
+    font-size: 0.85em;
+    color: #6c757d;
+}
+.name-and-action img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+    }
+.my-custom-size {
+            width: 240px;
+            height: 54px;
+        }
+.icons{
+    display:grid    ;
+    align-items: center;
+
+}
+.icon-text {
+    background-color:#F6F7F9; 
+    padding: 20px; 
+    text-align: left;
+    color: black; 
+    font-weight:bold;
+    width: 240px;
+    height: 54px; 
+    line-height: 30px;
+    box-sizing: border-box; 
+    margin-left: -20px; 
+    display: flex;
+}
+.user-text-info-bg  {
+      
+    width: 150px; /* กำหนดความกว้าง */
+    height: 54px; /* กำหนดความสูง */
+    display: flex;
+    align-items: center;
+}  
+.Document {
+    background-color: #ECEEF2; 
+    padding: 20px; 
+    text-align: left;
+    color: black; 
+    font-weight:bold;
+    width: 240px;
+    height: 54px; 
+    line-height: 30px;
+    box-sizing: border-box; 
+    margin-left: -20px; 
+    display: flex;
+}
+.User-setup-and-management {
+    background-color: #ECEEF2; 
+    padding: 20px; 
+    text-align: left;
+    color: black; 
+    font-weight:bold;
+    width: 240px;
+    height: 54px; 
+    line-height: 30px;
+    box-sizing: border-box; 
+    margin-left: -20px; 
+    display: flex;
+}
+.Set-up-policies-and-accounting {
+    background-color: #ECEEF2; 
+    padding: 20px; 
+    text-align: left;
+    color: #000000; 
+    font-weight:bold;
+    width: 240px;
+    height: 54px; 
+    line-height: 30px;
+    box-sizing: border-box; 
+    margin-left: -20px; 
+    display: flex;
+}
+.Organization-settings {
+    background-color: #ECEEF2; 
+    padding: 20px; 
+    text-align: left;
+    color: #000000; 
+    font-weight:bold;
+    width: 240px;
+    height: 54px; 
+    line-height: 30px;
+    box-sizing: border-box; 
+    margin-left: -20px; 
+    display: flex;
+}
+.Set-up-data-table {
+    background-color: #ECEEF2; 
+    padding: 20px; 
+    text-align: left;
+    color: #000000; 
+    font-weight:bold;
+    width: 240px;
+    height: 54px; 
+    line-height: 30px;
+    box-sizing: border-box; 
+    margin-left: -20px; 
+    display: flex;
+}
+.Connection-to-external-systems {
+    background-color: #ECEEF2; 
+    padding: 20px; 
+    text-align: left;
+    color: #000000; 
+    font-weight:bold;
+    width: 240px;
+    height: 54px; 
+    line-height: 30px;
+    box-sizing: border-box; 
+    margin-left: -20px; 
+    display: flex;
+}
+.bi-chevron-compact-up {
+    font-size: 18px; 
+   
+}
+.bi-chevron-compact-down {
+    font-size: 18px; 
+   
+}

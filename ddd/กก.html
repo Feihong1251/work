@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Gap Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2 คอลัมน์ ขนาดเท่ากัน */
+            /* grid-template-rows: auto auto; */ /* 2 แถว */
+            width: 600px; /* กำหนดความกว้างของ Grid Container */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box; /* สำคัญเพื่อให้ padding ไม่เกิน width */
+
+            /* --- การใช้ gap เพื่อให้ grid 1 ห่างกับ grid 2 --- */
+            gap: 20px; /* กำหนดช่องว่าง 20px ทั้งแนวตั้งและแนวนอน */
+            /* หรือ: */
+            /* column-gap: 20px; */ /* ถ้าอยากให้ห่างเฉพาะแนวนอน */
+            /* row-gap: 30px; */ /* ถ้าอยากให้ห่างเฉพาะแนวตั้ง */
+        }
+
+        .grid-item {
+            background-color: #007bff;
+            color: white;
+            padding: 25px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        /* สีที่แตกต่างกันเพื่อการมองเห็น */
+        .grid-item:nth-child(even) {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item">Grid 1</div>
+        <div class="grid-item">Grid 2</div>
+        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="work4.css">
+</head>
+
+<body>
+    <div class="d-flex">
+        <div class="sidebar-wrapper bg-light border-end"></div>
+        <div class="container mt-5">
+        <div class="form-section">
+            <h3 class="section-header">ใบกำกับภาษี <span class="text-muted">(รายการภาษีซื้อ)</span></h3>
+            <div class="row g-3 mb-4 align-items-end">
+                <div class="col-md-4">
+                    <label for="invoicePeriod" class="form-label">ยื่นภาษีรวมในช่วงวันที่</label>
+                    <select class="form-select" id="invoicePeriod">
+                        <option value="">00/00</option>
+                        </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="invoiceDate" class="form-label">วันที่</label>
+                    <input type="date" class="form-control" id="invoiceDate">
+                    </div>
+                <div class="col-md-4">
+                    <label for="invoiceNo" class="form-label">เลขที่ใบกำกับภาษี</label>
+                    <input type="text" class="form-control" id="invoiceNo" placeholder="AA-0000000000">
+                </div>
+            </div>
+
+            <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <label for="busTypeInvoice" class="form-label">ประเภทธุรกิจ / คำนำหน้า</label>
+                    <select class="form-select" id="busTypeInvoice">
+                        <option value="">ตัวอย่างข้อความ</option>
+                        </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="sellerName" class="form-label">ชื่อผู้จำหน่าย</label>
+                    <select class="form-select" id="sellerName">
+                        <option value="">ผู้จำหน่ายทดสอบ</option>
+                        </select>
+                </div>
+            </div>
+
+            <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <label for="branchInvoice" class="form-label">แยก</label>
+                    <select class="form-select" id="branchInvoice">
+                        <option value="">แยก</option>
+                        </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="sellerTaxId" class="form-label">เลขประจำตัวผู้เสียภาษี</label>
+                    <select class="form-select" id="sellerTaxId">
+                        <option value="">0000000000000</option>
+                        </select>
+                </div>
+            </div>
+
+            <div class="row g-3 mb-4">
+                <div class="col-12">
+                    <label class="form-label">ภาษีที่ขอคืนได้</label>
+                    <div class="value-box">
+                        <div>
+                            <span class="label">มูลค่า</span>
+                            <span class="amount">20,000.00 <small class="text-muted">บาท</small></span>
+                        </div>
+                        <div>
+                            <span class="label">จำนวนภาษี</span>
+                            <span class="amount">300.00 <small class="text-muted">บาท</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3 class="section-header">ใบหักภาษี <span class="text-muted">(รายการภาษีหัก ณ ที่จ่าย)</span></h3>
+            <div class="row g-3 mb-4 align-items-end">
+                <div class="col-md-4">
+                    <label for="whtPeriod" class="form-label">ยื่นภาษีรวมในช่วงวันที่</label>
+                    <select class="form-select" id="whtPeriod">
+                        <option value="">00/00</option>
+                        </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="whtDate" class="form-label">วันที่</label>
+                    <input type="date" class="form-control" id="whtDate">
+                    </div>
+                <div class="col-md-4">
+                    <label for="whtNo" class="form-label">เลขที่ใบกำกับภาษี</label>
+                    <input type="text" class="form-control" id="whtNo" placeholder="AA-0000000000">
+                </div>
+            </div>
+
+            <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <label for="busTypeWht" class="form-label">ประเภทธุรกิจ / ผู้หัก</label>
+                    <select class="form-select" id="busTypeWht">
+                        <option value="">ตัวอย่างข้อความ</option>
+                        </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="deductorName" class="form-label">ผู้ถูกหักภาษี/ผู้หัก</label>
+                    <select class="form-select" id="deductorName">
+                        <option value="">ผู้ถูกหักทดสอบ</option>
+                        </select>
+                </div>
+            </div>
+
+            <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <label for="branchWht" class="form-label">แยก</label>
+                    <select class="form-select" id="branchWht">
+                        <option value="">แยก</option>
+                        </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="deductorTaxId" class="form-label">เลขประจำตัวผู้เสียภาษี</label>
+                    <select class="form-select" id="deductorTaxId">
+                        <option value="">0000000000000</option>
+                        </select>
+                </div>
+            </div>
+
+            <div class="row g-3 mb-4">
+                <div class="col-12">
+                    <label for="incomeType" class="form-label">ประเภทเงินได้ที่หัก</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="incomeType" value="ค่าบริการ">
+                        <span class="input-group-text">1.5 %</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-buttons">
+            <button type="button" class="btn btn-light">ยกเลิก</button>
+            <button type="button" class="btn btn-primary">บันทึก</button>
+        </div>
+
+    </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

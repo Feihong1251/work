@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สร้างใบจ่ายเงินมัดจำ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="d-flex">
+    <div class="sidebar-wrapper bg-light shadow" style="width: 240px;">
+
+      <div class="container ">
+        <div class="accounting-block">
+        <h6 class="accounting-h6-style" >Accounting Program</h6></div>
+        <div class="user-profile">
+          <img src="picture/Rectangle 1336.png" alt="รูปโปรไฟล์" style="margin-left: 5px;">  
+          <div class="user-text-info">
+            <div class="user-text-info-bg">
+            <p tabindex="0" style="font-family: 'Noto Sans Thai', sans-serif;">ธยาดา อุดมเดชสกุล</p>
+          </div>
+            <p style="font-size:smaller;font-family: 'Noto Sans Thai', sans-serif;">ผู้ดูแลระบบ</p>
+          </div>
+          <i class="bi bi-chevron-compact-down" style="margin-left: -89px; display: flex;"></i>
+        </div>
+        <div class="icons" style="margin-left: 8px;">
+          <div class="icon-text">
+          <i class="bi bi-gear-fill" style="display: flex; border-radius: 100px;"></i>
+          <h4 style="margin-left: 10px; font-size:large;font-family: 'Noto Sans Thai', sans-serif;font-weight: bold; display: flex;" >ตั้งค่า</h4>
+          <i class="bi bi-chevron-compact-up" style="margin-left: 112px;display: flex;"></i>
+        </div>  
+      <div class="Document">
+        <h4 style="margin-left: 5px; font-size:medium;font-family: 'Noto Sans Thai', sans-serif;font-weight: bold; display: flex;" >ตั้งค่าเอกสาร</h4>
+      </div>
+      <div class="User-setup-and-management">
+        <h4 style="margin-left: 5px; font-size:medium;font-family: 'Noto Sans Thai', sans-serif;font-weight: bold; display: flex;" >ตั้งค่าผู้ใช้และการจัดการ</h4>
+      </div>
+      <div class="Set-up-policies-and-accounting">
+        <h4 style="margin-left: 5px; font-size:medium;font-family: 'Noto Sans Thai', sans-serif;font-weight: bold; display: flex;" >ตั้งค่านโยบายและการบัญชี</h4>
+      </div>
+      <div class="Set-up-data-table">
+        <h4 style="margin-left: 5px; font-size:medium;font-family: 'Noto Sans Thai', sans-serif;font-weight: bold; display: flex;" >ตั้งค่าตารางข้อมูล</h4>
+      </div>
+      <div class="Organization-settings">
+        <h4 style="margin-left: 5px; font-size:medium;font-family: 'Noto Sans Thai', sans-serif;font-weight: bold; display: flex;" >ตั้งค่าองค์กร</h4>
+      </div>
+      <div class="Connection-to-external-systems">
+        <h4 style="margin-left: 5px; font-size:medium;font-family: 'Noto Sans Thai', sans-serif;font-weight: bold; display: flex;" >การเชื่อมต่อกับระบบภายนอก</h4>
+      </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid p-4">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        
+          <h6 style="font-family:Noto Sans Thai ;">ซื้อ &gt; ใบจ่ายเงินนัดชำระ &gt; <b style="font-family:Noto Sans Thai ;">สร้างใบจ่ายเงินนัดชำระ</b></h6>
+        
+        <button class="btn ">
+          <img src="Frame 14.png" alt="">
+        </button>
+      </div>
+     <!--ด้านบน-->
+  <div class="header-row">
+        <h3 style="font-family:Noto Sans Thai ;" class="page-title">สร้างใบจ่ายเงินมัดจำ</h3>
+        <div class="doc-info">
+            <label style="font-family:Noto Sans Thai ;"  for="doc-number"  >เลขที่ใบจ่ายเงินมัดจำ</label>
+            <div  style="font-family:Noto Sans Thai  ;" class="doc-box" id="doc-number" >AE-2025011300001</div>
+        </div>
+    </div>
+
+      <!--ด้านล่าง-->
+<div class="distributor">
+    <div class="data-distributor">
+        <div style="font-family:Noto Sans Thai ;"  class="data-distributor-word"><h1>ข้อมูลผู้จำหน่าย</h1></div>
+        <div class="Input-Data">
+            <div class="Input-Data-item">
+                <p style="font-family:Noto Sans Thai ;"  for="distributor-name">ชื่อผู้จำหน่าย</p>
+                <input style="font-family:Noto Sans Thai ;"  type="text" id="distributor-name" placeholder="ชื่อผู้จำหน่าย">
+            </div>
+            <div class="Input-Data-item">
+                <p style="font-family:Noto Sans Thai ;"  for="distributor-code">รหัสผู้จำหนาย</p>
+                <input style="font-family:Noto Sans Thai ;" type="text" id="distributor-code" placeholder="รหัสผู้จำหน่าย">
+            </div>
+            </div>
+            <!--ส่วนที่สองที่อยู่ผู้จำหน่าย-->
+            <div class="address-distributor">
+                <div class="address-distributor-item">
+                  <p style="font-family:Noto Sans Thai ;"  for="distributor-address">ที่อยู่ผู้จำหน่าย</p>
+                  <textarea style="font-family:Noto Sans Thai ;" id="distributor-address" placeholder="ที่อยู่ผู้จำหน่าย"></textarea>
+                  
+                </div>
+                 <div class="address-distributor-item">
+                  <p style="font-family:Noto Sans Thai ;" for="distributor-phone">เบอร์โทรศัพท์</p>
+                  <input type="text" id="distributor-phone" placeholder="เบอร์โทร">
+                  <p style="font-family:Noto Sans Thai ;" for="distributor-business">ที่ตั้งธุรกิจ</p>
+                  <input style="font-family:Noto Sans Thai ;" type="text" id="distributor-business" placeholder="ที่ตั้งธุรกิจ">
+                 </div>
+            </div>
+            <!--ส่วนที่สามข้อมูลการติดต่อผู้จำหน่าย-->
+            <div class="phone-distributor">
+                <div style="font-family:Noto Sans Thai ;" class="phone-distributor-item">
+                    <p style="font-family:Noto Sans Thai ;"  for="distributor-email">อีเมล</p>
+                    <input style="font-family:Noto Sans Thai ;" type="email" id="distributor-email" placeholder="อีเมล">
+                </div>
+                <div class="phone-distributor-item">
+                    <p style="font-family:Noto Sans Thai ;" for="distributor-tax-id">ชื่อผู้ติดต่อ</p>
+                    <input style="font-family:Noto Sans Thai ;" type="text" id="distributor-tax-id" placeholder="ชื่อผู้ติดต่อ">
+            </div>
+        </div>
+        <!--สำนักงาน-->
+        <div class="head-office">
+          <h3 style="font-family:Noto Sans Thai ;">สำนักงาน / สาขา</h3>
+          <div class="office">
+          <div class="office-item">
+            <label><input style="font-family:Noto Sans Thai ;" type="radio" name="branch" value="head">สำนักงานใหญ่</label>
+             <label><input style="font-family:Noto Sans Thai ;" type="radio" name="branch" value="sub">สาขาย่อย</label>
+            </div>
+
+            <div class="office-item">
+            <input style="font-family:Noto Sans Thai ;" type="text" id="office-code" placeholder="รหัสสาขา">
+            <input style="font-family:Noto Sans Thai ;" type="text" id="office-name" placeholder="ชื่อสาขา">
+        </div>
+        </div>
+    </div>
+    <!--เส้นใต้สีน้ำเงิน-->
+    <div >
+        <hr style="border: 1px solid #079DCD; margin-top: 40px; list-style-type: style bold;;">
+    </div>
+    <!--วันเวลา-->
+    <div class="time-distributor">
+      <div class="time-distributor-item">
+       <p style="font-family:Noto Sans Thai ;" for="number-time-distributor">เลขที่บิล</p>
+      <input style="font-family:Noto Sans Thai ;" type="text" id="number-time-distributor" placeholder="AA-0000000000">
+      </div>
+      <div class="time-distributor-item">
+        <p style="font-family:Noto Sans Thai ;" for="payment-date">ลงวันที่</p>
+        <input style="font-family:Noto Sans Thai ;" type="date" id="payment-date" placeholder="00/00/0000">
+      </div>
+      <div class="time-distributor-item">
+        <p style="font-family:Noto Sans Thai ;" for="due-date">ยื่นงวด</p>
+        <input style="font-family:Noto Sans Thai ;" type="text" id="due-date" placeholder="00/00">
+      </div>
+    </div>
+    <!--หมายเหตุ-->
+    <div>
+        <div class="note-distributor">
+            <h3 style="font-family:Noto Sans Thai ;">หมายเหตุ</h3>
+            <textarea style="font-family:Noto Sans Thai ;" id="note-distributor" placeholder="กรุณากรอกหมายเหตุ"></textarea>
+        </div>
+    </div>
+    </div>
+    <!--ฝั่งขวา-->
+    <div class="data-distributor">
+       <div style="font-family:Noto Sans Thai ;" class="data-distributor-document"><h1>ข้อมูลเอกสาร</h1></div>
+       <div class="Input-tax">
+            <div class="Input-tax-item">
+                <p style="font-family:Noto Sans Thai ;" for="tax-id">อ้างอิงใบกำกับภาษี</p>
+                <input style="font-family:Noto Sans Thai ;" type="text" id="tax-id" placeholder="ค้นหาใบสั่งขาย">
+            </div>
+        </div>
+        <div class="Department-and-date">
+            <div class="Department-and-date-item">
+                <p style="font-family:Noto Sans Thai ;" for="department">แผนก</p>
+                <select id="department">
+                    <option style="font-family:Noto Sans Thai ;" value="sales">ฝ่ายขาย</option>
+                    <option style="font-family:Noto Sans Thai ;" value="accounting">บัญชี</option>
+                    <option style="font-family:Noto Sans Thai ;" value="support">ฝ่ายสนับสนุน</option>
+                  </select>
+            </div>
+            <div class="Department-and-date-item">
+                <p style="font-family:Noto Sans Thai ;" for="date">วันที่</p>
+                <input style="font-family:Noto Sans Thai ;" type="date" id="date" placeholder="00/00/0000">
+        </div>
+       </div>
+       <!--ครบกำหนด-->
+       <div>
+        <div class="due-date">
+          <div class="due-date-item">
+            <h3 style="font-family:Noto Sans Thai ;">ครบกำหนดวันที่</h3>
+            <input style="font-family:Noto Sans Thai ;" type="date" id="due-date-input" placeholder="00/00/0000">
+          </div>
+          <div class="due-date-item">
+            <h3 style="font-family:Noto Sans Thai ;">เครดิต(วัน)</h3>
+            <input style="font-family:Noto Sans Thai ;" type="text" id="credit-date" placeholder="14">
+          </div>
+        </div>
+       </div>
+       <!--ข้อมูลราคาภาษี-->
+       <div class="price-tax">
+        <div class="price-tax-item">
+            <h3 style="font-family:Noto Sans Thai ;">ข้อมูลราคาและภาษี</h3>
+            <select id="product-price">
+                <option style="font-family:Noto Sans Thai ;" value="0">ไม่คิดภาษี</option>
+                <option style="font-family:Noto Sans Thai ;" value="7">7%</option>
+                <option style="font-family:Noto Sans Thai ;" value="10">10%</option></select>
+        </div>
+        <div class="price-tax-item">
+            <h3 style="font-family:Noto Sans Thai ;">สกุลเงิน</h3>
+            <select id="tax-amount">
+                <option style="font-family:Noto Sans Thai ;" value="thb">THB</option>
+                <option style="font-family:Noto Sans Thai ;" value="usd">USD</option>
+                <option style="font-family:Noto Sans Thai ;" value="eur">EUR</option></select>
+        </div>
+       </div>
+       <!--การออกใบกำกับภาษี-->
+        <div class="tax-invoice">
+          <div class="tax-invoice-item">
+              <h3 style="font-family:Noto Sans Thai ;">การออกใบกำกับภาษี</h3>
+          </div>
+           <button class="toggle-switch on" id="tax-toggle">
+                <div class="toggle-slider"></div>
+            </button>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+<!--ของเฟย-->
+ <div class="d-flex">
+        <div class="sidebar-wrapper bg-light border-end">
+            <div class="p-3">
+                <h5></h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-w flex-grow-1 p-4">
+            <div class="container-f">
+                <h4 style="font-style: bold; font-size: 20px; font-weight: 700; font-family: Noto Sans Thai;" class="data-distributor-word ms-4">รายการ</h4>
+
+                <div class="mb-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="itemType" id="productRadio" value="product"
+                            checked>
+                        <label style="font-family:Noto Sans Thai ;" class="form-check-label" for="productRadio">
+                            สินค้า/บริการ
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input style="font-family:Noto Sans Thai ;" class="form-check-input" type="radio" name="itemType" id="serviceRadio" value="service">
+                        <label style="font-family:Noto Sans Thai ;" class="form-check-label" for="serviceRadio">
+                            บริการ
+                        </label>
+                    </div>
+                </div>
+
+                <div class="table-responsive mb-4">
+                    <table class="table table-bordered align-middle ms-0">
+                      <div class="table-header">
+                        <thead>
+                            <tr>
+                                <th style="border: none; font-family:Noto Sans Thai ;" scope="col" style="width: 5%;">ลำดับ</th>
+                                <th style="border: none; font-family:Noto Sans Thai ;" scope="col" style="width: 15%;">เอกสารที่อ้างอิง</th>
+                                <th style="border: none; font-family:Noto Sans Thai ;" scope="col" style="width: 25%;">ชื่อรายการ</th>
+                                <th style="border: none; font-family:Noto Sans Thai ;" scope="col" style="width: 25%;">รายละเอียด</th>
+                                <th style="border: none; font-family:Noto Sans Thai ;" scope="col" style="width: 15%;">ยอดหลังหักส่วนลด</th>
+                                <th style="border: none; font-family:Noto Sans Thai ;" scope="col" style="width: 10%;">ราคาต่อหน่วย</th>
+                                <th style="border: none; font-family:Noto Sans Thai ;" scope="col" style="width: 5%;"></th>
+                            </tr>
+                        </thead>
+                        </div>
+                        <tbody>
+                            <tr>
+                                <td style="border: none; font-family:Noto Sans Thai ;">1</td>
+                                <td style="border: none; font-family:Noto Sans Thai ;">SO-202501100001</td>
+                                <td style="border: none; font-family:Noto Sans Thai ;">ระบบบันทึกข้อมูลภายในสำนักงาน</td>
+                                <td style="border: none; font-family:Noto Sans Thai ;">จ่ายเงินมัดจำล่วงหน้า</td>
+                                <td style="border: none; font-family:Noto Sans Thai ;">43,100.00</td>
+                                <td style="border: none; font-family:Noto Sans Thai ;">20,000.00</td>
+                                <td style="border: none">
+                                    <div class="d-flex center justify-content-center">
+                                      <i class="bi bi-eye-fill me-2"></i>
+                                      <i class="bi bi-pencil-fill me-2"></i>
+                                      <i class="bi bi-trash-fill me-2"></i>
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="d-grid gap-2 mb-4">
+                    <button style="font-family:Noto Sans Thai ;" class="btn btn-info text-white py-2" type="button">เพิ่มรายการ</button>
+                </div>
+
+                <div class="form-check mb-4">
+                    <input class="form-check-input ms-0" type="checkbox" value="" id="signatureCheckbox">
+                    <label style="font-family:Noto Sans Thai ;" class="form-check-label " for="signatureCheckbox">
+                        ลายเซ็นต์อิเล็กทรอนิกส์และตรายาง
+                    </label>
+                </div>
+                
+                <div class="note-section ms-4">
+                    <h4 style="font-family:Noto Sans Thai ;" class="mb-3">หมายเหตุ</h4>
+                    <div>
+                        <textarea style="font-family:Noto Sans Thai ;" class="note-item" rows="4" placeholder="หมายเหตุ"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 style="font-family:Noto Sans Thai ;" class="mb-3 ms-4">แนบไฟล์</h4>
+                        <div class="upload">
+                            <div  class="upload-area">
+                            <button style="font-weight: 700; width: 149px; height: 40px;background-color: #056888; font-family:Noto Sans Thai ;" class="fs-6 btn btn-info text-white py-2 ms-4 bi bi-box-arrow-in-down ms-4 " type="button">อัปโหลดไฟล์</button></div>
+                            <p><small style="font-family:Noto Sans Thai ;" class="file-info ms-4">(รองรับไฟล์ .pdf, .jpg, .xls, .doc ไม่เกิน 40 MB / ไฟล์)</small>
+                            </p>
+                            <input type="file" hidden>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="summary-box">
+                            <h4 style="font-family:Noto Sans Thai ;" class="mb-3 d-flex justify-content-between align-items-center">
+                                สรุปมูลค่าสุทธิ
+                                <a href="#" style="font-family:Noto Sans Thai ;" class="text-secondary"><i class="bi bi-pencil-square"></i></a>
+                            </h4>
+                            <div class="summary-item">
+                                <span style="font-family:Noto Sans Thai ;" class="label">จำนวนเงิน</span>
+                                <span style="font-family:Noto Sans Thai ;" class="value">20,000.00 บาท</span>
+                            </div>
+                            <div class="summary-item d-flex justify-content-between align-items-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="vatCheckbox" checked>
+                                    <label style="font-family:Noto Sans Thai ;" class="form-check-label" for="vatCheckbox">
+                                        ภาษีมูลค่าเพิ่ม 7%
+                                    </label>
+                                </div>
+                                <span style="font-family:Noto Sans Thai ;" class="value">1,400.00 บาท</span>
+                            </div>
+                            <div class="summary-item d-flex justify-content-between align-items-center">
+                                <div class="form-check">
+                                    <input style="font-family:Noto Sans Thai ;" class="form-check-input" type="checkbox" value="" id="withholdingTaxCheckbox"
+                                        checked>
+                                    <label style="font-family:Noto Sans Thai ;" class="form-check-label" for="withholdingTaxCheckbox">
+                                        ภาษีถูกหัก ณ ที่จ่าย
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <select class="form-select form-select-sm w-auto me-2"
+                                        aria-label="Default select example">
+                                        <option style="font-family:Noto Sans Thai ;" selected>1.5%</option>
+                                        <option style="font-family:Noto Sans Thai ;" value="3%">3%</option>
+                                    </select>
+                                    <span style="font-family:Noto Sans Thai ;" class="value">300.00 บาท</span>
+                                </div>
+                            </div>
+                            <div class="summary-item d-flex justify-content-between align-items-center">
+                                <span style="font-family:Noto Sans Thai ;" class="label">จ่ายมัดจำเรียบร้อย</span>
+                                <div class="form-check form-switch">
+                                    <input style="font-family:Noto Sans Thai ;" class="form-check-input" type="checkbox" id="depositPaidSwitch">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center total-amount">
+                                <span style="font-family:Noto Sans Thai ;" class="fw-bold">ยอดชำระจริง</span> <span class="fw-bold">21,100.00 บาท</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--ของบีม-->
+      <div class="d-flex"> <div class="sidebar-wrapper bg-light border-end"> <div class="p-3">
+                <h5></h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+<!-- ส่วนของใบกำกับภาษี -->
+    <div class="tax-invoice-beam">
+      <div class="tax-invoice-item">
+       <div style="font-family:Noto Sans Thai ;" class="title-invoice-item"><h1>ใบกำกับภาษี </h1>
+          <p>ใบกำกับภาษี</p></div>
+      </div>
+      <div class="tax-invoice-item">
+        <div class="new-invoice-item">
+        <p style="font-family:Noto Sans Thai ;" for="tax-invoice-number">ยื่นภาษีรวมในงวดที่</p>
+        <select id="tax-invoice-number" placeholder="00/00">
+          <option style="font-family:Noto Sans Thai ;" value="1">00/00</option>
+          <option style="font-family:Noto Sans Thai ;" value="2">2</option>
+          <option style="font-family:Noto Sans Thai ;" value="3">3</option>
+          </select>
+          </div>
+          <div class="new-invoice-item">
+          <p style="font-family:Noto Sans Thai ;" for="tax-invoice-date">วันที่</p>
+        <input style="font-family:Noto Sans Thai ;" type="date" id="tax-invoice-date"  placeholder="00/00/0000">
+        </div>
+        <div class="invoice-item">
+        <p style="font-family:Noto Sans Thai ;" for="tax-invoice-amount">เลขใบกำกับภาษี</p>
+        <input style="font-family:Noto Sans Thai ;" type="text" id="tax-invoice-amount" placeholder="เลขที่ใบกำกับภาษี">
+        </div>
+      </div>
+      
+                  <!-- ประเภท -->
+                   <div>
+     <div class="type-invoice">
+      <div class="type-invoice-item">
+        <h3 style="font-family:Noto Sans Thai ;">ประเภท/คำนำหน้า</h3>
+        <select id="invoice-type">
+          <option style="font-family:Noto Sans Thai ;" value="invoice">ใบกำกับภาษี</option>
+          <option style="font-family:Noto Sans Thai ;" value="receipt">ใบเสร็จรับเงิน</option>
+          <option style="font-family:Noto Sans Thai ;" value="credit-note">ใบลดหนี้</option>
+        </select> 
+        <h3 style="font-family:Noto Sans Thai ;">แผนก</h3>
+        <select id="invoice-department">
+          <option style="font-family:Noto Sans Thai ;" value="sales">ฝ่ายขาย</option>
+          <option style="font-family:Noto Sans Thai ;" value="accounting">บัญชี</option>
+          <option style="font-family:Noto Sans Thai ;" value="support">ฝ่ายสนับสนุน</option>
+        </select>
+        </div>
+        <div class="type-invoice-item">
+          <h3 style="font-family:Noto Sans Thai ;">ชื่อผู้จำหน่าย</h3>
+          <select id="invoice-distributor">
+            <option style="font-family:Noto Sans Thai ;" value="distributor1">ผู้จำหน่าย 1</option>
+            <option style="font-family:Noto Sans Thai ;" value="distributor2">ผู้จำหน่าย 2</option>
+            <option style="font-family:Noto Sans Thai ;" value="distributor3">ผู้จำหน่าย 3</option>
+          </select>
+          <h3 style="font-family:Noto Sans Thai ;">เลขประจำตัวผู้เสียภาษี</h3>
+          <select id="invoice-distributor-code">
+            <option style="font-family:Noto Sans Thai ;" value="code1">รหัส 1</option>
+            <option style="font-family:Noto Sans Thai ;" value="code2">รหัส 2</option>
+            <option style="font-family:Noto Sans Thai ;" value="code3">รหัส 3</option>
+          </select>
+      </div>
+      <div class="type-invoice-item">
+        <div class="refund">
+        <div class="tax-refund">
+          <b style="font-family:Noto Sans Thai ;">ภาษีขอคืน</b>
+          <p style="font-family:Noto Sans Thai ;">มูลค่า<br>ภาษี</p>
+          
+        </div>
+        <div class="tax-refund">
+          <br>
+          <b style="font-family:Noto Sans Thai ;">20000 บาท</b>
+          <p style="font-family:Noto Sans Thai ;">1400 บาท</p>
+        </div>
+          </div>
+      </div>
+    </div>
+        <div class="tax-deducted">
+      <div class="tax-deducted-item">
+         <div class="title-deducted-item">
+          <h1 style="font-family:Noto Sans Thai ;">ใบหักภาษี </h1>
+          <p style="font-family:Noto Sans Thai ;">รายการภาษีหัก ณ ที่จ่าย</p></div>
+      </div>
+      <div class="tax-deducted-item">
+        <div class="deducted-item">
+        <h3 style="font-family:Noto Sans Thai ;">ยื่นภาษีรวมในงวดที่</h3>
+        <select id="tax-deducted-number" placeholder="00/00">
+          <option style="font-family:Noto Sans Thai ;" value="1">00/00</option>
+          <option style="font-family:Noto Sans Thai ;" value="2">2</option>
+          <option style="font-family:Noto Sans Thai ;" value="3">3</option>
+          </select>
+          </div>
+          <div class="deducted-item">
+          <h3 style="font-family:Noto Sans Thai ;">วันที่</h3>
+        <input type="date" id="tax-deducted-date"  placeholder="00/00/0000">
+        </div>
+        <div class="deducted-item">
+        <h3 style="font-family:Noto Sans Thai ;">เลขใบกำกับภาษี</h3>
+        <input type="text" id="tax-deducted-amount" placeholder="เลขที่ใบกำกับภาษี">
+        </div>
+      </div>
+      <div class="tax-deducted-item">
+        <div class="new-deducted-item">
+          <h3 style="font-family:Noto Sans Thai ;">ประเภท/คำนำหน้า</h3>
+          <select id="deducted-type">
+            <option style="font-family:Noto Sans Thai ;" value="invoice">ใบกำกับภาษี</option>
+            <option style="font-family:Noto Sans Thai ;" value="receipt">ใบเสร็จรับเงิน</option>
+            <option style="font-family:Noto Sans Thai ;" value="credit-note">ใบลดหนี้</option>
+          </select> 
+          <h3 style="font-family:Noto Sans Thai ;">แผนก</h3>
+          <select id="deducted-department">
+            <option style="font-family:Noto Sans Thai ;" value="sales">ฝ่ายขาย</option>
+            <option style="font-family:Noto Sans Thai ;" value="accounting">บัญชี</option>
+            <option style="font-family:Noto Sans Thai ;" value="support">ฝ่ายสนับสนุน</option>
+          </select>
+
+        </div>
+        <div class="new-deducted-item">
+          <h3 style="font-family:Noto Sans Thai ;">ชื่อผู้จำหน่าย</h3>
+          <select id="deducted-distributor">
+            <option style="font-family:Noto Sans Thai ;" value="distributor1">ผู้จำหน่าย 1</option>
+            <option style="font-family:Noto Sans Thai ;" value="distributor2">ผู้จำหน่าย 2</option>
+            <option style="font-family:Noto Sans Thai ;" value="distributor3">ผู้จำหน่าย 3</option>
+          </select>
+          <h3 style="font-family:Noto Sans Thai ;">ชื่อผู้จำหน่าย</h3>
+          <select id="deducted-distributor-code">
+            <option style="font-family:Noto Sans Thai ;" value="distributor1">ผู้จำหน่าย 1</option>
+            <option style="font-family:Noto Sans Thai ;" value="distributor2">ผู้จำหน่าย 2</option>
+            <option style="font-family:Noto Sans Thai ;" value="distributor3">ผู้จำหน่าย 3</option>
+          </select>
+        </div>
+        <div class="refund-deducted-item">
+          <div class="refund">
+            <div class="tax-refund">
+              <b style="font-family:Noto Sans Thai ;">ภาษีขอคืน</b>
+              <p style="font-family:Noto Sans Thai ;">มูลค่า<br>ภาษี</p>
+            </div>
+            <div class="tax-refund">
+              <br>
+              <br>
+              <b style="font-family:Noto Sans Thai ;">1.5%</b>
+            </div>
+          </div>
+    </div>
+      </div>
+    </div>     <div class="buttons-container">
+      <div class="text">
+    <button class="btn btn-secondary">ยกเลิก</button>
+    <button class="btn btn-primary">ตกลง</button>
+</div>
+  </div>
+    </div>
+    </div> 
+    </div> 
+</body>
+</html>
+
+ 
